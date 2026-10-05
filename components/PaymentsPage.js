@@ -102,7 +102,7 @@ const PaymentsPage = ({ username }) => {
       ) : (
         <>
           <Script src="https://checkout.razorpay.com/v1/checkout.js" />
-          <div className="w-full min-h-screen">
+          <div className="w-full min-h-screen md:mt-0 mt-10">
             <div className="relative w-full md:h-96 h-45">
               <Image
                 className="object-fit  w-full h-fit md:w-full md:h-96"
