@@ -1,65 +1,70 @@
 import Image from "next/image";
-
+import Link from "next/link";
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.js file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <>
+
+      <div className="flex flex-col justify-center items-center justify-center h-[30vh] md:h-[40vh] gap-2 text-white">
+        <div className="font-bold md:text-4xl text-2xl md:pl-0 pl-2.5 flex justify-center items-center">Buy Me a Chai<span><Image className="pb-4 w-11 h-14 md:w-22 md:h-26" src="/tea.gif" width={88} height={88} alt="" /></span></div>
+        <p className="pb-2 justify-center md:pl-0 pl-4 text-sm md:text-lg">
+          A crowdfunding platform for chai lovers to support their favorite chai vendors and help them grow their business.
+        </p>
+        <div className="flex gap-2">
+          <Link href="/login">
+          <button type="button" className="text-white  bg-linear-to-br from-purple-600 to-blue-500 hover:bg-linear-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-normal md:font-medium rounded-lg text-[12px] md:text-sm px-2 md:px-4 py-1 md:py-2.5 text-center leading-5">Start here</button>
+          </Link>
+          <Link href="/about">
+          <button type="button" className="text-white bg-linear-to-br from-purple-600 to-blue-500 hover:bg-linear-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-normal md:font-medium rounded-lg text-[12px] md:text-sm px-2 py-1 md:px-4 md:py-2.5 text-center leading-5">Read More</button>
+          </Link>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </div>
+      <div className="bg-white opacity-10 h-1">
+      </div>
+
+      <div className="container mx-auto text-white py-4 md:py-14">
+        <h1 className="text-xl md:text-3xl font-semibold md:font-bold text-center mb-4">Your Fans Can Buy You a Chai</h1>
+        <div className="flex justify-around">
+          <div className="item flex flex-col justify-center items-center space-y-3 mt-6">
+            <Image className="bg-slate-400 rounded-full p-2 md:w-22 md:h-22 w-14 h-14" src="/man.gif" width={88} height={88} alt="" />
+            <p className="font-bold text-sm md:text-xl">Fans Want To Help</p>
+            <p className="text-[12px] md:text-lg md:pl-0 pl-2.5">Your Fans Are Available For You To Help You</p>
+          </div>
+          <div className="item flex flex-col justify-around items-center space-y-3 mt-6">
+            <Image className="bg-slate-400 rounded-full p-2 md:w-22 md:h-22 w-14 h-14" src="/coin.gif" width={88} height={88} alt="" />
+            <p className="font-bold text-sm md:text-xl">Fans Want To Help</p>
+            <p className="text-[12px] md:text-lg md:pl-0 pl-2.5">Your Fans Are Available For You To Help You</p>
+          </div>
+          <div className="item flex flex-col justify-around items-center space-y-3 mt-6">
+            <Image className="bg-slate-400 rounded-full p-2 md:w-22 md:h-22 w-14 h-14" src="/group.gif" width={88} height={88} alt="" />
+            <p className="font-bold text-sm md:text-xl">Fans Want To Help</p>
+            <p className="text-[12px] md:text-lg md:pl-0 pl-2.5">Your Fans Are Available For You To Help You</p>
+          </div>
         </div>
-      </main>
-    </div>
+      </div>
+      <div className="bg-white opacity-10 h-1">
+      </div>
+      <div className="container mx-auto text-white py-12 mb-16">
+        <h1 className="md:text-3xl text-xl font-semibold md:font-bold text-center mb-4">Learn More About Us</h1>
+        <div className="flex justify-around">
+          <div className="item flex flex-col justify-center items-center space-y-3 mt-6">
+            <Image className="bg-slate-400 rounded-full p-2 md:w-22 md:h-22 w-14 h-14" src="/man.gif" width={88} height={88} alt="" />
+            <p className="font-bold text-sm md:text-xl">Fans Want To Help</p>
+            <p className="text-[12px] md:text-lg md:pl-0 pl-2.5">Your Fans Are Available For You To Help You</p>
+          </div>
+          <div className="item flex flex-col justify-around items-center space-y-3 mt-6">
+            <Image className="bg-slate-400 rounded-full p-2 md:w-22 md:h-22 w-14 h-14" src="/coin.gif" width={88} height={88} alt="" />
+            <p className="font-bold text-sm md:text-xl">Fans Want To Help</p>
+            <p className="text-[12px] md:text-lg md:pl-0 pl-2.5">Your Fans Are Available For You To Help You</p>
+          </div>
+          <div className="item flex flex-col justify-around items-center space-y-3 mt-6">
+            <Image className="bg-slate-400 rounded-full p-2 md:w-22 md:h-22 w-14 h-14" src="/group.gif" width={88} height={88} alt="" />
+            <p className="font-bold text-sm md:text-xl">Fans Want To Help</p>
+            <p className="text-[12px] md:text-lg md:pl-0 pl-2.5">Your Fans Are Available For You To Help You</p>
+          </div>
+        </div>
+
+      </div>
+
+    </>
   );
 }
