@@ -67,7 +67,7 @@ const Navbar = () => {
             <li>Sign Up</li>
             <li>Login</li>
           </ul> */}
-      <form onSubmit={handleSearch} className="flex flex-col absolute mt-16 w-full md:w-80 left-0 md:left-250 md:right-120 top-0 md:mt-2.5 md:mr-4">
+      <form onSubmit={handleSearch} className="flex flex-col absolute mt-16 w-full md:w-80 left-0 md:left-250 md:right-120 top-0 md:mt-2.5 md:mr-4 z-10">
         <div className="flex">
           <input
             type="text"
