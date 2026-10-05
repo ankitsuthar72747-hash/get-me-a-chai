@@ -54,10 +54,10 @@ export default function Home() {
               height={88}
               alt=""
             />
-            <p className="font-bold text-sm md:text-xl min-h-[28px]">
+            <p className="font-bold text-[12px] md:text-xl min-h-[28px]">
               Build Your Profile
             </p>
-            <p className="text-[12px] md:text-lg md:pl-0 pl-2.5 min-h-[72px]">
+            <p className="text-[11px] md:text-lg md:pl-0 pl-2.5 min-h-[72px]">
               Create your own profile and let your fans know what you’re working
               on.
             </p>
@@ -71,10 +71,10 @@ export default function Home() {
               height={88}
               alt=""
             />
-            <p className="font-bold text-sm md:text-xl min-h-[28px]">
+            <p className="font-bold text-[12px] md:text-xl min-h-[28px]">
               Receive Support
             </p>
-            <p className="text-[12px] md:text-lg md:pl-0 pl-2.5 min-h-[72px]">
+            <p className="text-[11px] md:text-lg md:pl-0 pl-2.5 min-h-[72px]">
               Your fans can support you with a small contribution through secure
               online payments.
             </p>
@@ -91,7 +91,7 @@ export default function Home() {
             <p className="font-bold text-[12px] md:text-xl min-h-[28px]">
               Connect With Your Fans
             </p>
-            <p className="text-[12px] md:text-lg md:pl-0 pl-2.5 min-h-[72px]">
+            <p className="text-[11px] md:text-lg md:pl-0 pl-2.5 min-h-[72px]">
               See your supporters and their messages, and keep growing your
               community.
             </p>
@@ -115,10 +115,10 @@ export default function Home() {
               height={88}
               alt=""
             />
-            <p className="font-bold text-sm md:text-xl min-h-[28px]">
+            <p className="font-bold text-[12px] md:text-xl min-h-[28px]">
               Made For Creators
             </p>
-            <p className="text-[12px] md:text-lg md:pl-0 pl-2.5 min-h-[72px]">
+            <p className="text-[11px] md:text-lg md:pl-0 pl-2.5 min-h-[72px]">
               A simple platform for creators to receive support from the people
               who enjoy their work.
             </p>
@@ -132,10 +132,10 @@ export default function Home() {
               height={88}
               alt=""
             />
-            <p className="font-bold text-sm md:text-xl min-h-[28px]">
+            <p className="font-bold text-[12px] md:text-xl min-h-[28px]">
               Every Chai Matters
             </p>
-            <p className="text-[12px] md:text-lg md:pl-0 pl-2.5 min-h-[72px]">
+            <p className="text-[11px] md:text-lg md:pl-0 pl-2.5 min-h-[72px]">
               Even a small contribution can help creators continue doing what
               they love.
             </p>
