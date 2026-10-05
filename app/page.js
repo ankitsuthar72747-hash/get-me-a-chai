@@ -149,10 +149,10 @@ export default function Home() {
               height={88}
               alt=""
             />
-            <p className="font-bold text-sm md:text-xl min-h-7">
+            <p className="font-bold text-[12px] md:text-xl min-h-7">
               Support & Grow
             </p>
-            <p className="text-[12px] md:text-lg md:pl-0 pl-2.5 min-h-18">
+            <p className="text-[11px] md:text-lg md:pl-0 pl-2.5 min-h-18">
               Give your fans an easy way to support you and be a part of your
               journey.
             </p>
