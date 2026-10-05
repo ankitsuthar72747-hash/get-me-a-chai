@@ -112,9 +112,18 @@ const PaymentsPage = ({ username }) => {
                 height={384}
                 priority
               />
-              <div className="absolute md:-bottom-22 top-20 md:top-80 md:left-200 left-44 md:right-[46%] border-slate-500 border-2 rounded-full size-fit overflow-hidden">
+              {/* <div className="absolute md:-bottom-22 top-20 md:top-80 md:left-200 left-44 md:right-[46%] border-slate-500 border-2 rounded-full size-fit overflow-hidden">
                 <Image
                   className="w-22 h-22 md:w-45 md:h-32 rounded-full size-fit object-cover"
+                  src={currentUser.profilepic}
+                  width={128}
+                  height={128}
+                  alt=""
+                />
+              </div> */}
+              <div className="absolute left-1/2 -translate-x-1/2 md:-bottom-22 -bottom-0 border-slate-500 border-2 rounded-full overflow-hidden">
+                <Image
+                  className="w-22 h-22 md:w-40 md:h-40 rounded-full object-cover"
                   src={currentUser.profilepic}
                   width={128}
                   height={128}
@@ -123,7 +132,9 @@ const PaymentsPage = ({ username }) => {
               </div>
             </div>
             <div className="info md:my-24 my-0 text-white flex flex-col items-center justify-center">
-              <div className="md:font-bold font-semibold text-lg md:text-xl pb-2">{username}</div>
+              <div className="md:font-bold font-semibold text-lg md:text-xl pb-2">
+                {username}
+              </div>
               <div className="text-slate-400 text-[12px] md:text-sm">
                 Lets help {currentUser.name} get a chai!
               </div>
@@ -133,7 +144,9 @@ const PaymentsPage = ({ username }) => {
               </div>
               <div className="payment flex md:flex-row flex-col gap-3 w-full md:w-[80%] mt-10">
                 <div className="supporters bg-slate-900 text-white p-4 md:p-10 md:w-1/2 rounded-lg md:h-110 h-100 md:mx-0 mx-4">
-                  <h2 className="md:text-2xl text-lg font-semibold md:font-bold md:my-5 ">Top 10 Supporters</h2>
+                  <h2 className="md:text-2xl text-lg font-semibold md:font-bold md:my-5 ">
+                    Top 10 Supporters
+                  </h2>
                   <ul className="mx-4">
                     {payments.length === 0 && (
                       <div className="text-slate-400 text-center my-4 md:my-10">
@@ -152,8 +165,10 @@ const PaymentsPage = ({ username }) => {
                           />
                           <span className="text-[16px]">
                             {p.name} donated{" "}
-                            <span className="font-bold text-[16.5px]">₹{p.amount}</span> with
-                            a message: "{p.message}"
+                            <span className="font-bold text-[16.5px]">
+                              ₹{p.amount}
+                            </span>{" "}
+                            with a message: "{p.message}"
                           </span>
                         </li>
                       );
@@ -161,7 +176,9 @@ const PaymentsPage = ({ username }) => {
                   </ul>
                 </div>
                 <div className="makePayement bg-slate-900 text-white p-1 px-4 md:p-10 md:w-1/2 rounded-lg mb-20 md:mx-0 mx-4">
-                  <h2 className="text-xl md:text-2xl font-bold my-3 md:my-5">Make a payement</h2>
+                  <h2 className="text-xl md:text-2xl font-bold my-3 md:my-5">
+                    Make a payement
+                  </h2>
                   <form action="">
                     <input
                       name="name"
